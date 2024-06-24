@@ -3,10 +3,11 @@ module Jekyll
     module Utils
 
       class I18n
-        @figure_i18n = {'en' => "Figure",
-                        'de' => "Abbildung",
-                        'sv' => "Figur",
-                        'fr' => "Figure"}
+        @figure_i18n = {'de' => "Abbildung"
+                        'en' => "Figure",
+                        'es' => "Figura",
+                        'fr' => "Figure",
+                        'sv' => "Figur"}
         def self.figure(lang)
           return @figure_i18n[lang] if @figure_i18n.key?(lang)
           @figure_i18n['en']
